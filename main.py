@@ -1,15 +1,13 @@
 import random
-
-from PyQt5 import uic
+import UI
 from PyQt5.QtGui import QColor, QPainter
-from PyQt5.QtWidgets import QWidget, QApplication, QLabel
+from PyQt5.QtWidgets import QApplication
 import sys
 
 
-class FirstForm(QWidget):
+class FirstForm(UI.Ui_Form):
     def __init__(self):
         super().__init__()
-        uic.loadUi('UI.ui', self)
         self.UI_init()
 
     def UI_init(self):
