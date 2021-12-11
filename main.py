@@ -26,12 +26,14 @@ class FirstForm(UI.Ui_Form):
         self.repaint()
 
     def draw_flag(self, qp):
-        qp.setBrush(QColor(255, 255, 0))
+        qp.setBrush(QColor(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)))
         a = random.randint(15, 150)
         qp.drawEllipse(10, 10, a, a)
         a = random.randint(15, 150)
+        qp.setBrush(QColor(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)))
         qp.drawEllipse(510, 10, a, a)
         a = random.randint(15, 150)
+        qp.setBrush(QColor(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)))
         qp.drawEllipse(250, 150, a, a)
 
 
